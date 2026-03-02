@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phone Repair Tips & Local Guides | TechRevive Blog | Smithfield, NC</title>
+<meta name="description" content="Expert phone repair tips, local guides, and advice from TechRevive Wireless Repairs in Smithfield, NC. Serving Clayton, Raleigh, Selma, Goldsboro & beyond.">
+<meta name="keywords" content="phone repair tips Smithfield NC, iPhone repair guide, Samsung repair Clayton NC, cell phone repair blog NC, cracked screen repair Johnston County">
+<link rel="canonical" href="https://techrevivewireless.com/blog.html">
+<meta property="og:title" content="Phone Repair Tips & Local Guides | TechRevive Blog">
+<meta property="og:description" content="Expert phone repair tips and local guides from TechRevive in Smithfield, NC.">
+<meta property="og:type" content="website">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Blog","name":"TechRevive Repair Blog","description":"Phone repair tips, local guides from TechRevive Wireless Repairs in Smithfield, NC","url":"https://techrevivewireless.com/blog.html","publisher":{"@type":"LocalBusiness","name":"TechRevive Wireless Repairs","telephone":"+19192950791","address":{"@type":"PostalAddress","addressLocality":"Smithfield","addressRegion":"NC"}}}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#070707;
+  --dark:#101010;
+  --dark2:#151515;
+  --card:#181818;
+  --accent:#00ff88;
+  --accent-dim:rgba(0,255,136,.1);
+  --accent-border:rgba(0,255,136,.22);
+  --white:#f5f5f5;
+  --gray:#777;
+  --gray2:#444;
+  --border:rgba(255,255,255,.07);
+  --border2:rgba(255,255,255,.11);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden}
+
+/* NAV */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(7,7,7,.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.container{max-width:1200px;margin:0 auto;padding:0 28px}
+.nav-content{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:'Space Mono',monospace;font-size:1.25rem;font-weight:700;color:var(--white);text-decoration:none;letter-spacing:-.5px}
+.logo em{color:var(--accent);font-style:normal}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-link{color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s}
+.nav-link:hover,.nav-link.active{color:var(--white)}
+.cta-btn{background:var(--accent);color:#000;padding:8px 20px;border-radius:5px;font-weight:700;font-size:.8rem;text-decoration:none;transition:all .2s}
+.cta-btn:hover{background:#00e87a;transform:translateY(-1px)}
+.mob-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:4px}
+.mob-toggle span{display:block;width:22px;height:1.5px;background:var(--white)}
+
+/* HERO */
+.blog-hero{padding:118px 0 64px;background:var(--dark);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 80% at 85% 15%,black 0%,transparent 70%);pointer-events:none}
+.breadcrumb{display:flex;gap:8px;align-items:center;margin-bottom:22px;list-style:none}
+.breadcrumb li{display:flex;align-items:center;gap:8px;font-size:.74rem;color:var(--gray);font-family:'Space Mono',monospace}
+.breadcrumb li:not(:last-child)::after{content:'/';opacity:.35}
+.breadcrumb a{color:var(--gray);text-decoration:none;transition:color .2s}
+.breadcrumb a:hover{color:var(--accent)}
+.eyebrow{font-family:'Space Mono',monospace;font-size:.66rem;color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';display:block;width:26px;height:1px;background:var(--accent)}
+.blog-hero h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;line-height:1.12;margin-bottom:14px;letter-spacing:-.6px}
+.blog-hero h1 span{color:var(--accent)}
+.blog-hero > .container > p{color:var(--gray);font-size:.96rem;max-width:480px;line-height:1.72}
+
+/* FILTER */
+.filter-bar{background:var(--dark2);border-bottom:1px solid var(--border);padding:18px 0;position:sticky;top:66px;z-index:100}
+.filter-wrap{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.filter-label{font-family:'Space Mono',monospace;color:var(--gray2);font-size:.63rem;text-transform:uppercase;letter-spacing:1.5px;margin-right:4px}
+.fbtn{background:transparent;border:1px solid var(--border2);color:rgba(255,255,255,.45);padding:6px 14px;border-radius:3px;font-size:.775rem;font-family:'Plus Jakarta Sans',sans-serif;cursor:pointer;transition:all .2s}
+.fbtn:hover,.fbtn.active{background:var(--accent);color:#000;border-color:var(--accent);font-weight:700}
+
+/* SECTION LABEL */
+.sec-label{font-family:'Space Mono',monospace;font-size:.64rem;color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:30px;display:flex;align-items:center;gap:12px}
+.sec-label::after{content:'';height:1px;width:30px;background:var(--accent);opacity:.4}
+
+/* FEATURED */
+.featured-wrap{padding:72px 0 36px}
+.feat-card{display:grid;grid-template-columns:1fr 1fr;border-radius:10px;overflow:hidden;border:1px solid var(--border2);background:var(--card);transition:border-color .3s}
+.feat-card:hover{border-color:var(--accent-border)}
+.feat-img{background:var(--dark2);min-height:380px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-right:1px solid var(--border)}
+.feat-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 55% at 40% 50%,rgba(0,255,136,.06) 0%,transparent 70%)}
+.feat-svg{width:96px;height:96px;position:relative;z-index:1}
+.feat-body{padding:52px 52px 52px 56px;display:flex;flex-direction:column;justify-content:center}
+.post-meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.cat{border:1px solid var(--accent-border);color:var(--accent);padding:3px 10px;border-radius:2px;font-size:.67rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-family:'Space Mono',monospace}
+.pdate{color:var(--gray);font-size:.74rem;font-family:'Space Mono',monospace}
+.pread{color:var(--gray);font-size:.74rem;font-family:'Space Mono',monospace}
+.pread::before{content:'·';margin-right:6px;opacity:.4}
+.feat-body h2{font-size:clamp(1.2rem,2vw,1.7rem);font-weight:800;line-height:1.22;margin-bottom:14px;letter-spacing:-.3px}
+.feat-body h2 a{color:var(--white);text-decoration:none;transition:color .2s}
+.feat-body h2 a:hover{color:var(--accent)}
+.feat-body > p{color:var(--gray);font-size:.9rem;line-height:1.78;margin-bottom:30px}
+.read-btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#000;padding:11px 22px;border-radius:4px;font-weight:700;font-size:.84rem;text-decoration:none;transition:all .25s;align-self:flex-start}
+.read-btn::after{content:'→';transition:transform .2s}
+.read-btn:hover{background:#00e87a}
+.read-btn:hover::after{transform:translateX(4px)}
+
+/* POST GRID */
+.posts-wrap{padding:16px 0 80px}
+.posts-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.post-card{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;display:flex;flex-direction:column;transition:all .3s}
+.post-card:hover{border-color:var(--accent-border);transform:translateY(-4px)}
+.pc-img{height:170px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.pc-img::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at center,rgba(0,255,136,.06) 0%,transparent 65%)}
+.pc-img svg{width:52px;height:52px;position:relative;z-index:1}
+.c1{background:linear-gradient(135deg,#0b1520,#080d14)}
+.c2{background:linear-gradient(135deg,#150d20,#0d0814)}
+.c3{background:linear-gradient(135deg,#0a1710,#060e09)}
+.c4{background:linear-gradient(135deg,#181008,#0f0904)}
+.c5{background:linear-gradient(135deg,#180a0a,#0e0505)}
+.c6{background:linear-gradient(135deg,#081418,#04090c)}
+.pc-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.pc-body .post-meta{margin-bottom:10px}
+.pc-body h3{font-size:.92rem;font-weight:700;line-height:1.35;margin-bottom:10px}
+.pc-body h3 a{color:var(--white);text-decoration:none;transition:color .2s}
+.pc-body h3 a:hover{color:var(--accent)}
+.pc-body p{color:var(--gray);font-size:.82rem;line-height:1.68;flex:1;margin-bottom:18px}
+.plink{color:var(--accent);text-decoration:none;font-size:.76rem;font-weight:700;display:inline-flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;transition:gap .2s}
+.plink:hover{gap:10px}
+
+/* ARTICLE */
+.article-section{padding:96px 0 72px;border-top:1px solid var(--border)}
+.article-grid{display:grid;grid-template-columns:1fr 308px;gap:56px;align-items:start}
+.article-head{margin-bottom:40px;padding-bottom:30px;border-bottom:1px solid var(--border)}
+.article-head h1{font-size:clamp(1.6rem,2.8vw,2.25rem);font-weight:800;line-height:1.18;margin-bottom:18px;letter-spacing:-.4px}
+article.body{color:rgba(245,245,245,.8);font-size:.96rem;line-height:1.84}
+article.body h2{font-size:1.3rem;font-weight:800;color:var(--white);margin:44px 0 14px;padding-top:40px;border-top:1px solid var(--border);letter-spacing:-.2px}
+article.body h3{font-size:.85rem;font-weight:700;color:var(--accent);margin:26px 0 10px;text-transform:uppercase;letter-spacing:1.2px;font-family:'Space Mono',monospace}
+article.body p{margin-bottom:16px}
+article.body ul,article.body ol{margin:0 0 18px 20px}
+article.body li{margin-bottom:9px;color:rgba(245,245,245,.68)}
+article.body strong{color:var(--white);font-weight:700}
+.callout{background:rgba(0,255,136,.04);border:1px solid var(--accent-border);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:18px 22px;margin:26px 0}
+.callout p{margin:0;color:rgba(245,245,245,.88);font-size:.9rem}
+
+/* FAQ */
+.faq-wrap{margin:32px 0}
+.faq-item{border:1px solid var(--border);border-radius:5px;margin-bottom:8px;overflow:hidden}
+.faq-q{background:var(--card);padding:15px 20px;font-weight:700;font-size:.875rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none;transition:background .2s;gap:12px}
+.faq-q:hover{background:#1e1e1e}
+.faq-ico{color:var(--accent);font-family:'Space Mono',monospace;font-size:.9rem;transition:transform .3s;flex-shrink:0;line-height:1}
+.faq-q.open .faq-ico{transform:rotate(45deg)}
+.faq-a{padding:0 20px;max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s}
+.faq-a.open{max-height:240px;padding:0 20px 16px}
+.faq-a p{color:var(--gray);font-size:.86rem;line-height:1.72;margin:0}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:120px}
+.sb-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:22px;margin-bottom:16px}
+.sb-card h4{font-family:'Space Mono',monospace;font-size:.66rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray2);margin-bottom:12px}
+.sb-card p{color:var(--gray);font-size:.82rem;line-height:1.65;margin-bottom:14px}
+.sb-cta{display:block;background:var(--accent);color:#000;text-align:center;padding:11px 18px;border-radius:4px;font-weight:700;font-size:.84rem;text-decoration:none;transition:all .2s}
+.sb-cta:hover{background:#00e87a}
+.sb-links{list-style:none}
+.sb-links li{border-bottom:1px solid var(--border);padding:9px 0}
+.sb-links li:last-child{border:none}
+.sb-links a{color:rgba(245,245,245,.52);text-decoration:none;font-size:.8rem;display:flex;justify-content:space-between;align-items:center;transition:color .2s}
+.sb-links a::after{content:'→';opacity:.3;font-size:.75rem}
+.sb-links a:hover{color:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tag{background:rgba(255,255,255,.04);border:1px solid var(--border);color:rgba(245,245,245,.38);padding:3px 9px;border-radius:2px;font-size:.68rem;font-family:'Space Mono',monospace}
+
+/* NEWSLETTER */
+.nl-section{padding:60px 0}
+.nl-bar{background:rgba(0,255,136,.03);border:1px solid var(--accent-border);border-radius:10px;padding:36px 40px;display:flex;gap:40px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.nl-text h3{font-size:1.05rem;font-weight:800;margin-bottom:5px;letter-spacing:-.2px}
+.nl-text p{color:var(--gray);font-size:.84rem}
+.nl-form{display:flex;gap:10px;flex-wrap:wrap}
+.nl-form input{background:rgba(255,255,255,.04);border:1px solid var(--border2);color:var(--white);padding:10px 16px;border-radius:4px;font-size:.84rem;font-family:'Plus Jakarta Sans',sans-serif;min-width:210px;outline:none;transition:border-color .2s}
+.nl-form input:focus{border-color:var(--accent-border)}
+.nl-form input::placeholder{color:var(--gray2)}
+.nl-form button{background:var(--accent);color:#000;border:none;padding:10px 22px;border-radius:4px;font-weight:700;font-size:.84rem;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;transition:all .2s;white-space:nowrap}
+.nl-form button:hover{background:#00e87a}
+
+/* CTA */
+.cta-section{padding:80px 0;background:var(--dark);border-top:1px solid var(--border)}
+.cta-inner{text-align:center;max-width:560px;margin:0 auto}
+.cta-inner h2{font-size:clamp(1.65rem,3.2vw,2.3rem);font-weight:800;margin-bottom:14px;letter-spacing:-.4px}
+.cta-inner p{color:var(--gray);margin-bottom:30px;font-size:.93rem}
+.cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 26px;border-radius:4px;font-weight:700;font-size:.875rem;text-decoration:none;transition:all .2s}
+.btn-p{background:var(--accent);color:#000}
+.btn-p:hover{background:#00e87a;transform:translateY(-2px)}
+.btn-s{background:transparent;color:var(--white);border:1px solid var(--border2)}
+.btn-s:hover{border-color:rgba(255,255,255,.35);transform:translateY(-2px)}
+
+/* FOOTER */
+footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0 0}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:44px;margin-bottom:44px}
+.foot-col h4{font-family:'Space Mono',monospace;font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray2);margin-bottom:18px}
+.foot-col p{color:var(--gray);font-size:.83rem;line-height:1.72}
+.foot-col ul{list-style:none}
+.foot-col ul li{margin-bottom:9px}
+.foot-col ul li a{color:var(--gray);text-decoration:none;font-size:.83rem;transition:color .2s}
+.foot-col ul li a:hover{color:var(--accent)}
+.foot-logo{font-family:'Space Mono',monospace;font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:14px;display:block}
+.foot-logo em{color:var(--accent);font-style:normal}
+.foot-bottom{border-top:1px solid var(--border);padding:22px 0;text-align:center}
+.foot-bottom p{color:var(--gray2);font-size:.74rem}
+hr.div{border:none;border-top:1px solid var(--border)}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .posts-grid{grid-template-columns:repeat(2,1fr)}
+  .article-grid{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(7,7,7,.98);padding:24px 28px;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid var(--border)}
+  .nav-links.open{display:flex}
+  .mob-toggle{display:flex}
+  .feat-card{grid-template-columns:1fr}
+  .feat-img{min-height:200px;border-right:none;border-bottom:1px solid var(--border)}
+  .feat-body{padding:32px 26px}
+  .posts-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .nl-bar{flex-direction:column;gap:22px;padding:28px}
+}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{animation:fadeUp .5s ease both .1s}
+.blog-hero h1{animation:fadeUp .5s ease both .2s}
+.blog-hero > .container > p{animation:fadeUp .5s ease both .3s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-content">
+      <a href="index.html" class="logo">Tech<em>Revive</em></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="tel:9192950791" class="cta-btn">Call Now</a>
+      </div>
+      <button class="mob-toggle" id="mobToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="blog-hero">
+  <div class="hero-grid"></div>
+  <div class="container">
+    <ul class="breadcrumb">
+      <li><a href="index.html">Home</a></li>
+      <li>Blog</li>
+    </ul>
+    <div class="eyebrow">Repair Tips &amp; Local Guides</div>
+    <h1>The TechRevive<br><span>Blog</span></h1>
+    <p>Phone repair guides, tips &amp; local resources for Smithfield, Clayton, Raleigh &amp; all of Johnston County, NC.</p>
+  </div>
+</section>
+
+<!-- FILTER -->
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-wrap">
+      <span class="filter-label">Filter</span>
+      <button class="fbtn active">All Posts</button>
+      <button class="fbtn">iPhone</button>
+      <button class="fbtn">Samsung</button>
+      <button class="fbtn">Repair Guides</button>
+      <button class="fbtn">Local NC</button>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURED -->
+<section class="featured-wrap">
+  <div class="container">
+    <div class="sec-label">Featured Article</div>
+    <div class="feat-card">
+      <div class="feat-img">
+        <svg class="feat-svg" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="8" width="52" height="80" rx="7" stroke="#00ff88" stroke-width="2.2"/>
+          <rect x="28" y="16" width="40" height="58" rx="2" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
+          <rect x="40" y="10" width="16" height="2" rx="1" fill="rgba(0,255,136,.3)"/>
+          <circle cx="48" cy="82" r="3" fill="rgba(0,255,136,.35)"/>
+          <polyline points="36,20 43,32 34,42 48,58 39,70" stroke="#00ff88" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+          <line x1="43" y1="32" x2="56" y2="37" stroke="#00ff88" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+          <line x1="34" y1="42" x2="52" y2="46" stroke="#00ff88" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
+          <line x1="48" y1="58" x2="60" y2="54" stroke="#00ff88" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+        </svg>
+      </div>
+      <div class="feat-body">
+        <div class="post-meta">
+          <span class="cat">iPhone Repair</span>
+          <span class="pdate">Feb 2026</span>
+          <span class="pread">8 min read</span>
+        </div>
+        <h2><a href="#iphone-screen-repair">iPhone Screen Cracked? Here's Exactly What to Do — And Where to Get It Fixed Fast in Smithfield, NC</a></h2>
+        <p>A cracked iPhone screen doesn't mean an expensive Apple Store trip or a week without your phone. We break down every real option for Johnston County residents — pricing, what to watch for, and how TechRevive can fix it same-day at your location.</p>
+        <a href="#iphone-screen-repair" class="read-btn">Read Article</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POST GRID -->
+<section class="posts-wrap">
+  <div class="container">
+    <div class="sec-label">All Articles</div>
+    <div class="posts-grid">
+
+      <div class="post-card">
+        <div class="pc-img c1">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="7" y="13" width="34" height="22" rx="3" stroke="#00ff88" stroke-width="2"/>
+            <rect x="41" y="19" width="4" height="10" rx="1.5" fill="rgba(0,255,136,.35)"/>
+            <rect x="10" y="16" width="20" height="16" rx="1.5" fill="rgba(0,255,136,.12)"/>
+            <line x1="26" y1="7" x2="26" y2="13" stroke="#00ff88" stroke-width="1.5" opacity=".35"/>
+            <line x1="26" y1="35" x2="26" y2="41" stroke="#00ff88" stroke-width="1.5" opacity=".35"/>
+            <line x1="19" y1="44" x2="33" y2="44" stroke="rgba(0,255,136,.3)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">Battery</span><span class="pdate">Jan 2026</span></div>
+          <h3><a href="#battery-guide">5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now</a></h3>
+          <p>Dying at 40%? Won't last the day? Your battery is probably shot. Here's how to diagnose it — and what replacement costs near Smithfield.</p>
+          <a href="#battery-guide" class="plink">Read More →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="pc-img c2">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="13" y="10" width="26" height="36" rx="4" stroke="#00ff88" stroke-width="2"/>
+            <rect x="18" y="15" width="16" height="22" rx="1.5" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
+            <path d="M18 29 Q22 26 26 29 Q30 32 34 29" stroke="#00ff88" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <path d="M18 34 Q22 31 26 34 Q30 37 34 34" stroke="#00ff88" stroke-width="1" stroke-linecap="round" fill="none" opacity=".45"/>
+            <circle cx="20" cy="8" r="1.5" fill="rgba(0,255,136,.45)"/>
+            <circle cx="26" cy="6" r="1.8" fill="rgba(0,255,136,.45)"/>
+            <circle cx="32" cy="8" r="1.5" fill="rgba(0,255,136,.45)"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">Water Damage</span><span class="pdate">Dec 2025</span></div>
+          <h3><a href="#water-damage">Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes</a></h3>
+          <p>The rice trick is a myth. Here's what actually saves a water-damaged phone — and why calling TechRevive fast is what matters most.</p>
+          <a href="#water-damage" class="plink">Read More →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="pc-img c3">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="7" width="20" height="30" rx="3" stroke="#00ff88" stroke-width="2"/>
+            <rect x="20" y="11" width="12" height="18" rx="1.5" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
+            <rect x="21" y="37" width="10" height="4" rx="1.5" fill="rgba(0,255,136,.18)" stroke="#00ff88" stroke-width="1.5"/>
+            <polyline points="28,15 24,22 28,22 24,30" stroke="#00ff88" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="14" y1="44" x2="38" y2="44" stroke="rgba(0,255,136,.22)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">Charging Port</span><span class="pdate">Nov 2025</span></div>
+          <h3><a href="#charging-port">Why Your Phone Won't Charge — And How to Fix It Near Clayton, NC</a></h3>
+          <p>Before buying a new phone, check if it's just the charging port. One of the most affordable repairs we do across Johnston County.</p>
+          <a href="#charging-port" class="plink">Read More →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="pc-img c4">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="14" width="36" height="26" rx="4" stroke="#00ff88" stroke-width="2"/>
+            <circle cx="26" cy="27" r="8" stroke="#00ff88" stroke-width="1.8"/>
+            <circle cx="26" cy="27" r="4.5" stroke="rgba(0,255,136,.38)" stroke-width="1.5"/>
+            <circle cx="26" cy="27" r="1.5" fill="rgba(0,255,136,.55)"/>
+            <rect x="20" y="10" width="6" height="4" rx="1.5" fill="rgba(0,255,136,.28)"/>
+            <circle cx="38" cy="18" r="2" fill="rgba(0,255,136,.38)"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">Camera Repair</span><span class="pdate">Oct 2025</span></div>
+          <h3><a href="#camera-repair">Blurry Camera? Cracked Lens? Here's What's Actually Wrong</a></h3>
+          <p>Camera issues range from a cracked lens cover to a full module replacement. Learn to diagnose the problem and what it costs to fix.</p>
+          <a href="#camera-repair" class="plink">Read More →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="pc-img c5">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 9C20.5 9 16 13.5 16 19C16 26 26 42 26 42C26 42 36 26 36 19C36 13.5 31.5 9 26 9Z" stroke="#00ff88" stroke-width="1.8" fill="none"/>
+            <circle cx="26" cy="19" r="4.5" stroke="#00ff88" stroke-width="1.6"/>
+            <circle cx="26" cy="19" r="1.8" fill="rgba(0,255,136,.45)"/>
+            <line x1="16" y1="43" x2="36" y2="43" stroke="rgba(0,255,136,.28)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">Local NC</span><span class="pdate">Sep 2025</span></div>
+          <h3><a href="#local-vs-apple">Apple Store vs. Local Repair: Why Smithfield Residents Choose Local</a></h3>
+          <p>The Apple Store is 45 minutes away and will likely cost more. See why Johnston County residents trust a mobile repair service instead.</p>
+          <a href="#local-vs-apple" class="plink">Read More →</a>
+        </div>
+      </div>
+
+      <div class="post-card">
+        <div class="pc-img c6">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M36 9C32.2 9 29 12.2 29 16C29 16.7 29.1 17.3 29.3 17.9L13 34.2C11.9 35.3 11.9 37.1 13 38.2L13.5 38.7C14.6 39.8 16.4 39.8 17.5 38.7L33.8 22.4C34.4 22.7 35.2 22.8 36 22.8C39.8 22.8 43 19.6 43 15.8C43 14.8 42.8 13.9 42.4 13L38.5 16.9L36.1 16L35.1 13.6L39 9.7C38.1 9.2 37.1 9 36 9Z" stroke="#00ff88" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+            <circle cx="16" cy="37" r="1.8" fill="rgba(0,255,136,.45)"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">How-To</span><span class="pdate">Aug 2025</span></div>
+          <h3><a href="#phone-care">How to Make Your Phone Last 3+ Years: A Technician's Guide</a></h3>
+          <p>After repairing hundreds of phones across Johnston County, our tech shares the habits that keep devices running longer.</p>
+          <a href="#phone-care" class="plink">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ARTICLE 1: iPhone Screen -->
+<section class="article-section" id="iphone-screen-repair">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"iPhone Screen Cracked? Here's Exactly What to Do","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"publisher":{"@type":"Organization","name":"TechRevive Wireless Repairs"},"datePublished":"2026-02-01"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where can I get my iPhone screen fixed in Smithfield NC?","acceptedAnswer":{"@type":"Answer","text":"TechRevive Wireless Repairs is a mobile repair service serving Smithfield NC and surrounding areas. We come to your location for same-day repairs. Call (919) 295-0791."}},{"@type":"Question","name":"How long does iPhone screen repair take near Smithfield?","acceptedAnswer":{"@type":"Answer","text":"Most repairs take 30-45 minutes. TechRevive is mobile — we come to you."}},{"@type":"Question","name":"Will my data be safe during a screen repair?","acceptedAnswer":{"@type":"Answer","text":"Yes. Screen replacement does not affect your stored data at all."}},{"@type":"Question","name":"Is it worth fixing a cracked iPhone screen?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes. A screen repair costs far less than a new phone and fully restores functionality."}}]}</script>
+  <div class="container">
+    <div class="article-grid">
+      <div>
+        <div class="article-head">
+          <div class="post-meta"><span class="cat">iPhone Repair</span><span class="pdate">February 2026</span><span class="pread">8 min read</span></div>
+          <h1>iPhone Screen Cracked? Here's Exactly What to Do — And Where to Get It Fixed Fast in Smithfield, NC</h1>
+        </div>
+        <article class="body">
+          <p>You glance down. Spider-web cracks across your iPhone screen. Whether it dropped two feet onto pavement or slipped off a countertop, a cracked screen is the most common phone disaster we see across <strong>Smithfield, NC and Johnston County</strong>.</p>
+          <p>The good news: you have real options — and most don't involve $400+ at a corporate repair center or going a week without your phone.</p>
+          <div class="callout"><p><strong>TechRevive is mobile.</strong> We come to you anywhere in Smithfield, Clayton, Selma, Goldsboro, Benson, and up to 50+ miles out. Call <strong>(919) 295-0791</strong> for a free quote.</p></div>
+
+          <h2>First: Assess the Damage</h2>
+          <p>Not all cracked screens are equal. Check these before doing anything else:</p>
+          <ul>
+            <li><strong>Display still working?</strong> If you can see and touch clearly, you may only have a cracked glass layer — a more affordable fix.</li>
+            <li><strong>Black spots, lines, or dead zones?</strong> The LCD or OLED beneath is damaged — still fixable, but pricier.</li>
+            <li><strong>Just a small corner chip?</strong> A good screen protector can stop spreading while you schedule a repair.</li>
+          </ul>
+
+          <h2>Your Real Options in Johnston County</h2>
+          <h3>Apple Store — Raleigh / Durham</h3>
+          <p>Nearest location is 40–50 minutes from Smithfield. Apple charges <strong>$129–$379</strong> depending on model — more without AppleCare+. You'll need an appointment, then wait 1–3 hours on-site.</p>
+          <h3>National Chains</h3>
+          <p>Stores like uBreakiFix operate in the Raleigh area. Similar pricing, better turnaround, but still requires a 30–45 minute drive each way.</p>
+          <h3>Mail-In Services</h3>
+          <p>We recommend against this for a primary device. You're without it 5–10 business days, shipping risk is real, and disputes are hard to resolve.</p>
+          <h3>TechRevive — Mobile Repair, Smithfield NC</h3>
+          <p>We come <em>to you</em> — home, work, or wherever is convenient. Most iPhone screen repairs take <strong>30–45 minutes</strong>. Transparent pricing, quality parts, every repair warrantied. We've met customers in parking lots at 11pm on Fridays — because your schedule matters.</p>
+
+          <h2>How Much Does iPhone Screen Repair Cost?</h2>
+          <ul>
+            <li><strong>iPhone SE:</strong> ~$80–$110</li>
+            <li><strong>iPhone 11 / XR:</strong> ~$100–$140</li>
+            <li><strong>iPhone 12 / 13 series:</strong> ~$130–$180</li>
+            <li><strong>iPhone 14 / 15 series:</strong> ~$150–$220</li>
+          </ul>
+          <p>Call or text <strong>(919) 295-0791</strong> for a free exact quote on your specific model.</p>
+
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-wrap">
+            <div class="faq-item">
+              <div class="faq-q">Where can I get my iPhone screen fixed in Smithfield, NC? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>TechRevive Wireless Repairs is a mobile service serving Smithfield and surrounding areas including Clayton, Selma, Goldsboro, and Benson. We come to your location. Call (919) 295-0791.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How long does iPhone screen repair take? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Most iPhone screen repairs take 30–45 minutes. We come to you — no shop waiting required.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Will my data be safe? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Yes. Screen replacement does not affect any data. Photos, apps, and contacts remain completely intact.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is it worth fixing a cracked iPhone screen? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>In most cases yes, especially newer models. A screen repair costs a fraction of a new phone and fully restores the device.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div class="sb-card">
+          <h4>Need a Repair Now?</h4>
+          <p>We come to you anywhere in Johnston County. Free diagnostics, same-day service.</p>
+          <a href="tel:9192950791" class="sb-cta">(919) 295-0791</a>
+        </div>
+        <div class="sb-card">
+          <h4>More Articles</h4>
+          <ul class="sb-links">
+            <li><a href="#battery-guide">5 Battery Warning Signs</a></li>
+            <li><a href="#water-damage">Phone Dropped in Water?</a></li>
+            <li><a href="#charging-port">Won't Charge? Here's Why</a></li>
+            <li><a href="#camera-repair">Blurry Camera Fix Guide</a></li>
+            <li><a href="#local-vs-apple">Local vs Apple Store</a></li>
+          </ul>
+        </div>
+        <div class="sb-card">
+          <h4>All Brands Repaired</h4>
+          <div class="tags">
+            <span class="tag">iPhone</span><span class="tag">Samsung</span><span class="tag">Pixel</span><span class="tag">LG</span><span class="tag">Motorola</span><span class="tag">OnePlus</span>
+          </div>
+        </div>
+        <div class="sb-card">
+          <h4>Areas We Serve</h4>
+          <ul class="sb-links">
+            <li><a href="index.html">Smithfield, NC</a></li>
+            <li><a href="index.html">Clayton, NC</a></li>
+            <li><a href="index.html">Selma, NC</a></li>
+            <li><a href="index.html">Goldsboro, NC</a></li>
+            <li><a href="index.html">Benson, NC</a></li>
+            <li><a href="index.html">Four Oaks, NC</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ARTICLE 2: Battery -->
+<section class="article-section" id="battery-guide">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2026-01-15"}</script>
+  <div class="container">
+    <div class="article-grid">
+      <div>
+        <div class="article-head">
+          <div class="post-meta"><span class="cat">Battery</span><span class="pdate">January 2026</span><span class="pread">5 min read</span></div>
+          <h1>5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now</h1>
+        </div>
+        <article class="body">
+          <p>Smartphone batteries are consumable parts. After roughly <strong>500–800 charge cycles</strong> — about 2–3 years of regular use — lithium-ion batteries start losing their ability to hold a charge. Here's how to know if yours is the problem.</p>
+          <h2>Sign 1: Dying Before End of Day</h2>
+          <p>A healthy battery should get most people through a full day. If you're reaching for a charger by 2pm with moderate use, capacity has likely dropped significantly. This is the most common complaint we hear from Smithfield and Clayton customers.</p>
+          <h2>Sign 2: Erratic Percentage Jumps</h2>
+          <p>Jumping from 45% to 15% in minutes, or showing 20% then shutting off completely — this voltage sag is a classic sign of a degraded cell that can't maintain output under load.</p>
+          <h2>Sign 3: Unusual Heat While Charging</h2>
+          <p>Some warmth is normal. Consistent heat — especially while the phone is just sitting there — often points to a battery working overtime to compensate for lost capacity.</p>
+          <h2>Sign 4: iPhone Battery Health Below 80%</h2>
+          <p>Go to <strong>Settings &rarr; Battery &rarr; Battery Health &amp; Charging</strong>. Apple recommends replacement below 80%. Many customers come to us at 68–73% and are genuinely surprised how much better the phone runs after a fresh battery.</p>
+          <h2>Sign 5: Random Shutdown Under Load</h2>
+          <p>Games, GPS, camera — anything taxing the processor can cause an old battery to drop voltage fast enough to trigger an emergency shutdown. That's the battery failing, not the phone itself.</p>
+          <div class="callout"><p><strong>Battery replacements start at ~$49–$79</strong> for most iPhone and Samsung models. We come to you in Smithfield, Clayton &amp; surrounding areas. Call <strong>(919) 295-0791</strong>.</p></div>
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-wrap">
+            <div class="faq-item">
+              <div class="faq-q">How long does battery replacement take? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Most battery replacements take 20–40 minutes. We come to your location so you don't need to go anywhere.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Will I lose my data? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>No. Battery replacement has zero effect on data stored on your device.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is battery replacement worth it on an older phone? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Usually yes — if the rest of the phone is in good shape. A $60 repair can add 1–2 years of solid performance to a phone that might cost $700+ to replace.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div class="sb-card">
+          <h4>Free Battery Check</h4>
+          <p>Not sure if the battery is the problem? We diagnose for free — at your location.</p>
+          <a href="contact.html" class="sb-cta">Get Free Quote</a>
+        </div>
+        <div class="sb-card">
+          <h4>More Articles</h4>
+          <ul class="sb-links">
+            <li><a href="#iphone-screen-repair">iPhone Screen Repair Guide</a></li>
+            <li><a href="#water-damage">Phone Dropped in Water?</a></li>
+            <li><a href="#charging-port">Won't Charge? Here's Why</a></li>
+            <li><a href="#local-vs-apple">Local vs Apple Store</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ARTICLE 3: Water Damage -->
+<section class="article-section" id="water-damage">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2025-12-10"}</script>
+  <div class="container">
+    <div class="article-grid">
+      <div>
+        <div class="article-head">
+          <div class="post-meta"><span class="cat">Water Damage</span><span class="pdate">December 2025</span><span class="pread">6 min read</span></div>
+          <h1>Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes</h1>
+        </div>
+        <article class="body">
+          <p>Every year we get calls from people across Johnston County — Smithfield, Clayton, Selma, Four Oaks — who dropped their phone in a pool, toilet, sink, or got caught in the rain. The first <strong>10 minutes after water exposure are the most critical</strong> to saving your device.</p>
+          <div class="callout"><p><strong>Stop. Don't put it in rice.</strong> Uncooked rice does almost nothing to pull moisture from phone internals. It wastes the critical window you have to act.</p></div>
+          <h2>Step 1: Power It Off Immediately</h2>
+          <p>If the phone is still on, shut it down right now. Don't test if it still works. Electricity and water cause short circuits. Every second it stays powered on with moisture inside increases the risk of permanent damage.</p>
+          <h2>Step 2: Remove Case and Extras</h2>
+          <p>Take off the case. If it's an older Android with a removable back, pull the battery out. Remove the SIM card tray. This helps moisture escape and protects critical components.</p>
+          <h2>Step 3: Gently Dry the Exterior</h2>
+          <p>Use a soft dry cloth. Pat gently — don't rub — around ports and speakers. Avoid blowing into ports (breath adds moisture) and never use a hair dryer (heat damages components).</p>
+          <h2>Step 4: Drain It</h2>
+          <p>Hold the phone with the charging port facing down and gently tap or shake to encourage water to run out. Let gravity help.</p>
+          <h2>Step 5: Call TechRevive Right Now</h2>
+          <p>This is the step most people skip — and it costs them their phone. Professional water damage treatment involves opening the device, properly drying the internals, and treating corrosion before it spreads. The longer moisture sits inside, the worse it gets. <strong>Call (919) 295-0791</strong> and we'll come to you as quickly as possible anywhere in the Smithfield area.</p>
+          <h2>What About "Water Resistant" Phones?</h2>
+          <p>Modern iPhones (11 and newer) and many Samsung Galaxy models carry IP67 or IP68 ratings. This helps — but doesn't make them waterproof. Seals degrade over time, drops compromise them, and salt water or chlorinated pool water negates the practical protection entirely.</p>
+          <div class="faq-wrap">
+            <div class="faq-item">
+              <div class="faq-q">Can a water-damaged phone be saved? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Often yes, especially if treated quickly. Success rates are far higher when a professional addresses it within the first few hours. We serve Johnston County and surrounding NC areas.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Does insurance cover water damage? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>It depends on your plan. Asurion and AppleCare+ often cover water damage with a deductible — but local repair is frequently faster, cheaper, and requires no claim filing.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">How much does water damage repair cost near Smithfield, NC? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>It varies by damage severity. Diagnostics are free. Minor cases run $60–$100. Call (919) 295-0791 for a free assessment.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div class="sb-card">
+          <h4>Water Damage Emergency?</h4>
+          <p>Don't wait. Call now. The sooner we treat it, the better your device's chances.</p>
+          <a href="tel:9192950791" class="sb-cta">(919) 295-0791</a>
+        </div>
+        <div class="sb-card">
+          <h4>More Articles</h4>
+          <ul class="sb-links">
+            <li><a href="#iphone-screen-repair">iPhone Screen Repair Guide</a></li>
+            <li><a href="#battery-guide">5 Battery Warning Signs</a></li>
+            <li><a href="#charging-port">Won't Charge? Here's Why</a></li>
+            <li><a href="#phone-care">Make Your Phone Last Longer</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="nl-section">
+  <div class="container">
+    <div class="nl-bar">
+      <div class="nl-text">
+        <h3>Get Repair Tips &amp; Local Deals</h3>
+        <p>Join Johnston County residents who get phone care tips and exclusive repair discounts.</p>
+      </div>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Ready to Fix Your Device?</h2>
+      <p>We come to you anywhere in Smithfield, Clayton, Raleigh, Goldsboro, and beyond. Free diagnostics. Same-day repairs. No surprises.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-p">Get Free Quote</a>
+        <a href="tel:9192950791" class="btn btn-s">Call (919) 295-0791</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <span class="foot-logo">Tech<em>Revive</em></span>
+        <p>Professional cell phone repair in Smithfield, NC and surrounding areas. We come to you.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Screen Repair</a></li>
+          <li><a href="services.html">Battery Replacement</a></li>
+          <li><a href="services.html">Water Damage</a></li>
+          <li><a href="services.html">Charging Port</a></li>
+          <li><a href="services.html">Camera Repair</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:9192950791">(919) 295-0791</a></li>
+          <li>Smithfield, NC</li>
+          <li>Clayton, NC</li>
+          <li>Johnston County &amp; Beyond</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; 2026 TechRevive Wireless Repairs. All rights reserved. Serving Smithfield, Clayton, Selma, Goldsboro, Benson &amp; surrounding NC areas.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav
+const toggle = document.getElementById('mobToggle');
+const nav = document.getElementById('navLinks');
+toggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+// Filter buttons
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const isOpen = q.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
+    document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+    if (!isOpen) {
+      q.classList.add('open');
+      q.nextElementSibling.classList.add('open');
+    }
+  });
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+</script>
+</body>
+</html>

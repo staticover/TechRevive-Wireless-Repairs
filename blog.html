@@ -12,7 +12,10 @@
 <meta property="og:type" content="website">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Blog","name":"TechRevive Repair Blog","description":"Phone repair tips, local guides from TechRevive Wireless Repairs in Smithfield, NC","url":"https://techrevivewireless.com/blog.html","publisher":{"@type":"LocalBusiness","name":"TechRevive Wireless Repairs","telephone":"+19192950791","address":{"@type":"PostalAddress","addressLocality":"Smithfield","addressRegion":"NC"}}}
+{"@context":"https://schema.org","@type":"Blog","name":"TechRevive Repair Blog","description":"Phone repair tips, local guides from TechRevive Wireless Repairs in Smithfield, NC","url":"https://techrevivewireless.com/blog.html","dateModified":"2026-06-27","publisher":{"@type":"LocalBusiness","name":"TechRevive Wireless Repairs","telephone":"+19192950791","address":{"@type":"PostalAddress","addressLocality":"Smithfield","addressRegion":"NC"}}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://techrevivewireless.com/index.html"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://techrevivewireless.com/blog.html"}]}
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,6 +116,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:va
 .c4{background:linear-gradient(135deg,#181008,#0f0904)}
 .c5{background:linear-gradient(135deg,#180a0a,#0e0505)}
 .c6{background:linear-gradient(135deg,#081418,#04090c)}
+.c7{background:linear-gradient(135deg,#1c1404,#0f0a02)}
 .pc-body{padding:24px;flex:1;display:flex;flex-direction:column}
 .pc-body .post-meta{margin-bottom:10px}
 .pc-body h3{font-size:.92rem;font-weight:700;line-height:1.35;margin-bottom:10px}
@@ -121,6 +125,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:va
 .pc-body p{color:var(--gray);font-size:.82rem;line-height:1.68;flex:1;margin-bottom:18px}
 .plink{color:var(--accent);text-decoration:none;font-size:.76rem;font-weight:700;display:inline-flex;align-items:center;gap:6px;font-family:'Space Mono',monospace;transition:gap .2s}
 .plink:hover{gap:10px}
+.new-badge{background:var(--accent);color:#000;font-size:.6rem;font-weight:800;padding:2px 7px;border-radius:2px;font-family:'Space Mono',monospace;text-transform:uppercase;letter-spacing:.5px}
 
 /* ARTICLE */
 .article-section{padding:96px 0 72px;border-top:1px solid var(--border)}
@@ -134,8 +139,11 @@ article.body p{margin-bottom:16px}
 article.body ul,article.body ol{margin:0 0 18px 20px}
 article.body li{margin-bottom:9px;color:rgba(245,245,245,.68)}
 article.body strong{color:var(--white);font-weight:700}
+article.body a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-border);transition:border-color .2s}
+article.body a:hover{border-color:var(--accent)}
 .callout{background:rgba(0,255,136,.04);border:1px solid var(--accent-border);border-left:3px solid var(--accent);border-radius:0 6px 6px 0;padding:18px 22px;margin:26px 0}
 .callout p{margin:0;color:rgba(245,245,245,.88);font-size:.9rem}
+.last-updated{color:var(--gray2);font-size:.72rem;font-family:'Space Mono',monospace;margin-top:8px}
 
 /* FAQ */
 .faq-wrap{margin:32px 0}
@@ -285,25 +293,28 @@ hr.div{border:none;border-top:1px solid var(--border)}
     <div class="feat-card">
       <div class="feat-img">
         <svg class="feat-svg" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="22" y="8" width="52" height="80" rx="7" stroke="#00ff88" stroke-width="2.2"/>
-          <rect x="28" y="16" width="40" height="58" rx="2" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
-          <rect x="40" y="10" width="16" height="2" rx="1" fill="rgba(0,255,136,.3)"/>
-          <circle cx="48" cy="82" r="3" fill="rgba(0,255,136,.35)"/>
-          <polyline points="36,20 43,32 34,42 48,58 39,70" stroke="#00ff88" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-          <line x1="43" y1="32" x2="56" y2="37" stroke="#00ff88" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
-          <line x1="34" y1="42" x2="52" y2="46" stroke="#00ff88" stroke-width="1.2" stroke-linecap="round" opacity=".45"/>
-          <line x1="48" y1="58" x2="60" y2="54" stroke="#00ff88" stroke-width="1" stroke-linecap="round" opacity=".35"/>
+          <circle cx="48" cy="32" r="14" stroke="#00ff88" stroke-width="2.2"/>
+          <line x1="48" y1="8" x2="48" y2="14" stroke="#00ff88" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="48" y1="50" x2="48" y2="56" stroke="#00ff88" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="24" y1="32" x2="30" y2="32" stroke="#00ff88" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="66" y1="32" x2="72" y2="32" stroke="#00ff88" stroke-width="2.2" stroke-linecap="round"/>
+          <line x1="31" y1="15" x2="35" y2="19" stroke="#00ff88" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          <line x1="61" y1="45" x2="65" y2="49" stroke="#00ff88" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          <line x1="65" y1="15" x2="61" y2="19" stroke="#00ff88" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          <line x1="35" y1="45" x2="31" y2="49" stroke="#00ff88" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+          <rect x="38" y="58" width="20" height="30" rx="4" stroke="#00ff88" stroke-width="2"/>
+          <rect x="42" y="63" width="12" height="18" rx="1.5" stroke="rgba(0,255,136,.3)" stroke-width="1.3"/>
         </svg>
       </div>
       <div class="feat-body">
         <div class="post-meta">
-          <span class="cat">iPhone Repair</span>
-          <span class="pdate">Feb 2026</span>
-          <span class="pread">8 min read</span>
+          <span class="cat">Local NC</span>
+          <span class="pdate">June 2026</span>
+          <span class="pread">7 min read</span>
         </div>
-        <h2><a href="#iphone-screen-repair">iPhone Screen Cracked? Here's Exactly What to Do — And Where to Get It Fixed Fast in Smithfield, NC</a></h2>
-        <p>A cracked iPhone screen doesn't mean an expensive Apple Store trip or a week without your phone. We break down every real option for Johnston County residents — pricing, what to watch for, and how TechRevive can fix it same-day at your location.</p>
-        <a href="#iphone-screen-repair" class="read-btn">Read Article</a>
+        <h2><a href="#summer-heat">NC Summer Heat Is Frying Phones Right Now — How to Stop Overheating Before It Kills Your Battery</a></h2>
+        <p>Every June through August, Johnston County sees a spike in heat-damaged phones — swollen batteries, shutdowns, scorched charging ports left in hot cars. Here's what's actually happening inside your phone and how to stop it before it's a $200 repair.</p>
+        <a href="#summer-heat" class="read-btn">Read Article</a>
       </div>
     </div>
   </div>
@@ -314,6 +325,25 @@ hr.div{border:none;border-top:1px solid var(--border)}
   <div class="container">
     <div class="sec-label">All Articles</div>
     <div class="posts-grid">
+
+      <div class="post-card">
+        <div class="pc-img c7">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="26" cy="18" r="8" stroke="#00ff88" stroke-width="2"/>
+            <line x1="26" y1="4" x2="26" y2="8" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/>
+            <line x1="12" y1="18" x2="16" y2="18" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/>
+            <line x1="36" y1="18" x2="40" y2="18" stroke="#00ff88" stroke-width="2" stroke-linecap="round"/>
+            <rect x="20" y="30" width="12" height="18" rx="2.5" stroke="#00ff88" stroke-width="2"/>
+            <line x1="23" y1="34" x2="29" y2="34" stroke="rgba(0,255,136,.35)" stroke-width="1.3"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="new-badge">New</span><span class="cat">Local NC</span><span class="pdate">Jun 2026</span></div>
+          <h3><a href="#summer-heat">NC Summer Heat Is Frying Phones — How to Stop Overheating</a></h3>
+          <p>Hot cars, direct sun, and humid Johnston County summers are the #1 cause of swollen batteries this time of year. Here's how to prevent it.</p>
+          <a href="#summer-heat" class="plink">Read More →</a>
+        </div>
+      </div>
 
       <div class="post-card">
         <div class="pc-img c1">
@@ -423,6 +453,117 @@ hr.div{border:none;border-top:1px solid var(--border)}
         </div>
       </div>
 
+      <div class="post-card">
+        <div class="pc-img c1">
+          <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="8" width="24" height="36" rx="4" stroke="#00ff88" stroke-width="2"/>
+            <rect x="18" y="13" width="16" height="22" rx="1.5" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
+            <circle cx="26" cy="40" r="2" fill="rgba(0,255,136,.4)"/>
+          </svg>
+        </div>
+        <div class="pc-body">
+          <div class="post-meta"><span class="cat">iPhone Repair</span><span class="pdate">Feb 2026</span></div>
+          <h3><a href="#iphone-screen-repair">iPhone Screen Cracked? Here's Exactly What to Do</a></h3>
+          <p>A cracked screen doesn't mean an Apple Store trip. Every repair option for Johnston County residents, with real pricing.</p>
+          <a href="#iphone-screen-repair" class="plink">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="div">
+
+<!-- ARTICLE 0: Summer Heat (newest) -->
+<section class="article-section" id="summer-heat">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"NC Summer Heat Is Frying Phones Right Now — How to Stop Overheating","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"publisher":{"@type":"Organization","name":"TechRevive Wireless Repairs"},"datePublished":"2026-06-27","dateModified":"2026-06-27"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can summer heat permanently damage a phone battery?","acceptedAnswer":{"@type":"Answer","text":"Yes. Lithium-ion batteries degrade permanently when repeatedly exposed to temperatures above 95F. A single hour in a hot car can cause lasting capacity loss."},{"@type":"Question","name":"What temperature is too hot for a smartphone?","acceptedAnswer":{"@type":"Answer","text":"Apple and Samsung both rate their devices for safe operation up to 95F (35C). Above that, phones throttle performance and battery chemistry degrades faster."}},{"@type":"Question","name":"Why is my phone hot even when I'm not using it?","acceptedAnswer":{"@type":"Answer","text":"This usually means a failing battery, a stuck app draining the processor in the background, or direct heat exposure such as a sunny dashboard or windowsill."}},{"@type":"Question","name":"Is a swollen phone battery dangerous?","acceptedAnswer":{"@type":"Answer","text":"Yes. A swollen battery can rupture or catch fire. Stop using the device immediately and have it serviced."}}]}</script>
+  <div class="container">
+    <div class="article-grid">
+      <div>
+        <div class="article-head">
+          <div class="post-meta"><span class="cat">Local NC</span><span class="pdate">June 2026</span><span class="pread">7 min read</span></div>
+          <h1>NC Summer Heat Is Frying Phones Right Now — How to Stop Overheating Before It Kills Your Battery</h1>
+          <p class="last-updated">Last updated June 27, 2026</p>
+        </div>
+        <article class="body">
+          <p>Late June through August is our busiest season for heat-related phone failures across <strong>Smithfield, Clayton, Selma, and the rest of Johnston County</strong>. The pattern is always the same: a phone left on a dashboard, in a hot car, or in direct sun for too long, followed by a swollen battery, random shutdowns, or a phone that simply won't charge anymore.</p>
+          <div class="callout"><p><strong>If your phone feels hot to the touch right now and you're not actively using it</strong>, stop charging it and get it checked. Call <strong>(919) 295-0791</strong> for a free diagnostic.</p></div>
+
+          <h2>Why Heat Is the Silent Phone Killer</h2>
+          <p>Every smartphone battery is lithium-ion, and lithium-ion chemistry degrades faster the hotter it gets. Apple and Samsung both rate their devices for safe operation only up to about 95°F. A car dashboard in a Johnston County summer regularly hits 140°F+ in direct sun — well past the point of permanent damage.</p>
+          <ul>
+            <li><strong>Heat accelerates capacity loss</strong> — a battery that should last 3 years can be down to 1–2 years of useful life after repeated heat exposure.</li>
+            <li><strong>Heat causes swelling</strong> — internal gas buildup from degraded cells can physically warp the battery and push against the screen or back glass.</li>
+            <li><strong>Heat throttles performance</strong> — your phone deliberately slows down to protect itself, which is why apps freeze or lag on hot days.</li>
+          </ul>
+
+          <h2>Warning Signs to Check Today</h2>
+          <h3>Visual swelling</h3>
+          <p>If the back of your phone is bulging, the screen is lifting at the edges, or a case that used to fit snugly suddenly feels tight — that's a swollen battery. Stop charging it immediately and bring it in.</p>
+          <h3>Charges slower than it used to</h3>
+          <p>Heat-damaged batteries often can't accept a full charge rate anymore. If charging that used to take an hour now takes three, the cell has degraded.</p>
+          <h3>Random shutdowns in the heat specifically</h3>
+          <p>A phone that's fine indoors but shuts off the moment you take it outside in July is showing classic heat-related voltage sag.</p>
+
+          <h2>How to Protect Your Phone This Summer</h2>
+          <ol>
+            <li>Never leave your phone on a dashboard, in direct sun, or in a parked car — even for "just a few minutes" at the grocery store.</li>
+            <li>Remove thick cases while charging in warm weather; they trap heat against the device.</li>
+            <li>Avoid charging your phone right after heavy use in the sun — let it cool first.</li>
+            <li>Keep your phone out of direct sunlight at the pool, the lake, or outdoor events — shade or a bag, not your back pocket against your body.</li>
+          </ol>
+
+          <h2>If the Damage Is Already Done</h2>
+          <p>A heat-damaged battery doesn't repair itself — it only gets worse with continued use, and a swollen battery is a genuine safety risk. The fix is a straightforward <a href="services.html">battery replacement</a>, usually 20–40 minutes, and we come to you anywhere in Smithfield, Clayton, or the surrounding area. If the swelling has already cracked your screen, we can <a href="services.html">handle screen repair</a> in the same visit.</p>
+          <div class="callout"><p><strong>Free diagnostic, same-day service.</strong> Call or text <strong>(919) 295-0791</strong>, or <a href="contact.html">request a quote online</a>.</p></div>
+
+          <h2>Frequently Asked Questions</h2>
+          <div class="faq-wrap">
+            <div class="faq-item">
+              <div class="faq-q">Can summer heat permanently damage a phone battery? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Yes. Lithium-ion batteries degrade permanently when repeatedly exposed to temperatures above 95°F. Even a single hour in a hot car can cause lasting capacity loss.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">What temperature is too hot for a smartphone? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Apple and Samsung both rate their devices for safe operation up to about 95°F (35°C). Above that, phones throttle performance and the battery degrades faster.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Why is my phone hot even when I'm not using it? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Usually a failing battery, a stuck app draining the processor in the background, or direct heat exposure such as a sunny dashboard or windowsill.</p></div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Is a swollen phone battery dangerous? <span class="faq-ico">+</span></div>
+              <div class="faq-a"><p>Yes. A swollen battery can rupture or catch fire. Stop using the device immediately and have it serviced.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <aside class="sidebar">
+        <div class="sb-card">
+          <h4>Phone Overheating?</h4>
+          <p>Free diagnostic, same-day service anywhere in Johnston County.</p>
+          <a href="tel:9192950791" class="sb-cta">(919) 295-0791</a>
+        </div>
+        <div class="sb-card">
+          <h4>More Articles</h4>
+          <ul class="sb-links">
+            <li><a href="#battery-guide">5 Battery Warning Signs</a></li>
+            <li><a href="#water-damage">Phone Dropped in Water?</a></li>
+            <li><a href="#iphone-screen-repair">iPhone Screen Repair Guide</a></li>
+          </ul>
+        </div>
+        <div class="sb-card">
+          <h4>Areas We Serve</h4>
+          <ul class="sb-links">
+            <li><a href="index.html">Smithfield, NC</a></li>
+            <li><a href="index.html">Clayton, NC</a></li>
+            <li><a href="index.html">Selma, NC</a></li>
+            <li><a href="index.html">Goldsboro, NC</a></li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
@@ -431,7 +572,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
 
 <!-- ARTICLE 1: iPhone Screen -->
 <section class="article-section" id="iphone-screen-repair">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"iPhone Screen Cracked? Here's Exactly What to Do","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"publisher":{"@type":"Organization","name":"TechRevive Wireless Repairs"},"datePublished":"2026-02-01"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"iPhone Screen Cracked? Here's Exactly What to Do","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"publisher":{"@type":"Organization","name":"TechRevive Wireless Repairs"},"datePublished":"2026-02-01","dateModified":"2026-06-27"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where can I get my iPhone screen fixed in Smithfield NC?","acceptedAnswer":{"@type":"Answer","text":"TechRevive Wireless Repairs is a mobile repair service serving Smithfield NC and surrounding areas. We come to your location for same-day repairs. Call (919) 295-0791."}},{"@type":"Question","name":"How long does iPhone screen repair take near Smithfield?","acceptedAnswer":{"@type":"Answer","text":"Most repairs take 30-45 minutes. TechRevive is mobile — we come to you."}},{"@type":"Question","name":"Will my data be safe during a screen repair?","acceptedAnswer":{"@type":"Answer","text":"Yes. Screen replacement does not affect your stored data at all."}},{"@type":"Question","name":"Is it worth fixing a cracked iPhone screen?","acceptedAnswer":{"@type":"Answer","text":"In most cases yes. A screen repair costs far less than a new phone and fully restores functionality."}}]}</script>
   <div class="container">
     <div class="article-grid">
@@ -439,6 +580,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
         <div class="article-head">
           <div class="post-meta"><span class="cat">iPhone Repair</span><span class="pdate">February 2026</span><span class="pread">8 min read</span></div>
           <h1>iPhone Screen Cracked? Here's Exactly What to Do — And Where to Get It Fixed Fast in Smithfield, NC</h1>
+          <p class="last-updated">Last updated June 27, 2026</p>
         </div>
         <article class="body">
           <p>You glance down. Spider-web cracks across your iPhone screen. Whether it dropped two feet onto pavement or slipped off a countertop, a cracked screen is the most common phone disaster we see across <strong>Smithfield, NC and Johnston County</strong>.</p>
@@ -461,7 +603,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
           <h3>Mail-In Services</h3>
           <p>We recommend against this for a primary device. You're without it 5–10 business days, shipping risk is real, and disputes are hard to resolve.</p>
           <h3>TechRevive — Mobile Repair, Smithfield NC</h3>
-          <p>We come <em>to you</em> — home, work, or wherever is convenient. Most iPhone screen repairs take <strong>30–45 minutes</strong>. Transparent pricing, quality parts, every repair warrantied. We've met customers in parking lots at 11pm on Fridays — because your schedule matters.</p>
+          <p>We come <em>to you</em> — home, work, or wherever is convenient. Most iPhone <a href="services.html">screen repairs</a> take <strong>30–45 minutes</strong>. Transparent pricing, quality parts, every repair warrantied. We've met customers in parking lots at 11pm on Fridays — because your schedule matters.</p>
 
           <h2>How Much Does iPhone Screen Repair Cost?</h2>
           <ul>
@@ -470,7 +612,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
             <li><strong>iPhone 12 / 13 series:</strong> ~$130–$180</li>
             <li><strong>iPhone 14 / 15 series:</strong> ~$150–$220</li>
           </ul>
-          <p>Call or text <strong>(919) 295-0791</strong> for a free exact quote on your specific model.</p>
+          <p>Call or text <strong>(919) 295-0791</strong> for a free exact quote on your specific model, or <a href="contact.html">request a quote online</a>.</p>
 
           <h2>Frequently Asked Questions</h2>
           <div class="faq-wrap">
@@ -502,6 +644,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
         <div class="sb-card">
           <h4>More Articles</h4>
           <ul class="sb-links">
+            <li><a href="#summer-heat">Summer Heat &amp; Overheating</a></li>
             <li><a href="#battery-guide">5 Battery Warning Signs</a></li>
             <li><a href="#water-damage">Phone Dropped in Water?</a></li>
             <li><a href="#charging-port">Won't Charge? Here's Why</a></li>
@@ -535,16 +678,17 @@ hr.div{border:none;border-top:1px solid var(--border)}
 
 <!-- ARTICLE 2: Battery -->
 <section class="article-section" id="battery-guide">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2026-01-15"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2026-01-15","dateModified":"2026-06-27"}</script>
   <div class="container">
     <div class="article-grid">
       <div>
         <div class="article-head">
           <div class="post-meta"><span class="cat">Battery</span><span class="pdate">January 2026</span><span class="pread">5 min read</span></div>
           <h1>5 Signs Your iPhone or Samsung Battery Needs Replacing Right Now</h1>
+          <p class="last-updated">Last updated June 27, 2026</p>
         </div>
         <article class="body">
-          <p>Smartphone batteries are consumable parts. After roughly <strong>500–800 charge cycles</strong> — about 2–3 years of regular use — lithium-ion batteries start losing their ability to hold a charge. Here's how to know if yours is the problem.</p>
+          <p>Smartphone batteries are consumable parts. After roughly <strong>500–800 charge cycles</strong> — about 2–3 years of regular use — lithium-ion batteries start losing their ability to hold a charge. Heat exposure (see our <a href="#summer-heat">summer heat guide</a>) speeds this up significantly. Here's how to know if yours is the problem.</p>
           <h2>Sign 1: Dying Before End of Day</h2>
           <p>A healthy battery should get most people through a full day. If you're reaching for a charger by 2pm with moderate use, capacity has likely dropped significantly. This is the most common complaint we hear from Smithfield and Clayton customers.</p>
           <h2>Sign 2: Erratic Percentage Jumps</h2>
@@ -582,6 +726,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
         <div class="sb-card">
           <h4>More Articles</h4>
           <ul class="sb-links">
+            <li><a href="#summer-heat">Summer Heat &amp; Overheating</a></li>
             <li><a href="#iphone-screen-repair">iPhone Screen Repair Guide</a></li>
             <li><a href="#water-damage">Phone Dropped in Water?</a></li>
             <li><a href="#charging-port">Won't Charge? Here's Why</a></li>
@@ -597,16 +742,17 @@ hr.div{border:none;border-top:1px solid var(--border)}
 
 <!-- ARTICLE 3: Water Damage -->
 <section class="article-section" id="water-damage">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2025-12-10"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes","author":{"@type":"Person","name":"TechRevive Wireless Repairs"},"datePublished":"2025-12-10","dateModified":"2026-06-27"}</script>
   <div class="container">
     <div class="article-grid">
       <div>
         <div class="article-head">
           <div class="post-meta"><span class="cat">Water Damage</span><span class="pdate">December 2025</span><span class="pread">6 min read</span></div>
           <h1>Dropped Your Phone in Water? Do These 5 Things in the Next 10 Minutes</h1>
+          <p class="last-updated">Last updated June 27, 2026</p>
         </div>
         <article class="body">
-          <p>Every year we get calls from people across Johnston County — Smithfield, Clayton, Selma, Four Oaks — who dropped their phone in a pool, toilet, sink, or got caught in the rain. The first <strong>10 minutes after water exposure are the most critical</strong> to saving your device.</p>
+          <p>Every year we get calls from people across Johnston County — Smithfield, Clayton, Selma, Four Oaks — who dropped their phone in a pool, toilet, sink, or got caught in the rain. With pool season in full swing this time of year, the first <strong>10 minutes after water exposure are the most critical</strong> to saving your device.</p>
           <div class="callout"><p><strong>Stop. Don't put it in rice.</strong> Uncooked rice does almost nothing to pull moisture from phone internals. It wastes the critical window you have to act.</p></div>
           <h2>Step 1: Power It Off Immediately</h2>
           <p>If the phone is still on, shut it down right now. Don't test if it still works. Electricity and water cause short circuits. Every second it stays powered on with moisture inside increases the risk of permanent damage.</p>
@@ -617,7 +763,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
           <h2>Step 4: Drain It</h2>
           <p>Hold the phone with the charging port facing down and gently tap or shake to encourage water to run out. Let gravity help.</p>
           <h2>Step 5: Call TechRevive Right Now</h2>
-          <p>This is the step most people skip — and it costs them their phone. Professional water damage treatment involves opening the device, properly drying the internals, and treating corrosion before it spreads. The longer moisture sits inside, the worse it gets. <strong>Call (919) 295-0791</strong> and we'll come to you as quickly as possible anywhere in the Smithfield area.</p>
+          <p>This is the step most people skip — and it costs them their phone. Professional water damage treatment involves opening the device, properly drying the internals, and treating corrosion before it spreads. The longer moisture sits inside, the worse it gets. <strong>Call (919) 295-0791</strong> and we'll come to you as quickly as possible anywhere in the Smithfield area, or <a href="contact.html">request emergency service online</a>.</p>
           <h2>What About "Water Resistant" Phones?</h2>
           <p>Modern iPhones (11 and newer) and many Samsung Galaxy models carry IP67 or IP68 ratings. This helps — but doesn't make them waterproof. Seals degrade over time, drops compromise them, and salt water or chlorinated pool water negates the practical protection entirely.</p>
           <div class="faq-wrap">
@@ -645,6 +791,7 @@ hr.div{border:none;border-top:1px solid var(--border)}
         <div class="sb-card">
           <h4>More Articles</h4>
           <ul class="sb-links">
+            <li><a href="#summer-heat">Summer Heat &amp; Overheating</a></li>
             <li><a href="#iphone-screen-repair">iPhone Screen Repair Guide</a></li>
             <li><a href="#battery-guide">5 Battery Warning Signs</a></li>
             <li><a href="#charging-port">Won't Charge? Here's Why</a></li>

@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Repair Services | TechRevive Wireless Repairs | Smithfield, NC</title>
-<meta name="description" content="Cell phone repair services in Smithfield NC — screen repair, battery replacement, water damage, charging port, camera repair, and more. Mobile service, we come to you.">
+<title>Repair Services | TechRevive Wireless Repairs | Selma, NC</title>
+<meta name="description" content="Phone repair services in Selma NC — screen repair, battery replacement, water damage, charging port, camera repair, and more. Walk in to 108 W Anderson St or call (919) 295-0791.">
 <link rel="canonical" href="https://techrevivewireless.com/services.html">
+<link rel="icon" type="image/png" href="assets/techrevive-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -15,9 +16,12 @@
 html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:var(--white);line-height:1.6;overflow-x:hidden}
 .container{max-width:1200px;margin:0 auto;padding:0 28px}
-.navbar{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(7,7,7,.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
+.address-bar{background:var(--accent);color:#000;text-align:center;padding:9px 28px;font-family:'Space Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.6px;display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap}
+.address-bar a{color:#000;text-decoration:none;border-bottom:1px solid rgba(0,0,0,.25)}
+.navbar{position:fixed;top:38px;left:0;right:0;z-index:200;background:rgba(7,7,7,.94);backdrop-filter:blur(24px);border-bottom:1px solid var(--border)}
 .nav-content{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{font-family:'Space Mono',monospace;font-size:1.25rem;font-weight:700;color:var(--white);text-decoration:none;letter-spacing:-.5px}
+.logo{display:flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:1.25rem;font-weight:700;color:var(--white);text-decoration:none;letter-spacing:-.5px}
+.logo img{height:30px;width:auto;display:block}
 .logo em{color:var(--accent);font-style:normal}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-link{color:rgba(255,255,255,.55);text-decoration:none;font-size:.85rem;font-weight:500;transition:color .2s}
@@ -39,17 +43,13 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:va
 .breadcrumb li:not(:last-child)::after{content:'/';opacity:.35}
 .breadcrumb a{color:var(--gray);text-decoration:none;transition:color .2s}
 .breadcrumb a:hover{color:var(--accent)}
-
-/* PAGE HERO */
-.page-hero{padding:118px 0 64px;background:var(--dark);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
+.page-hero{padding:168px 0 64px;background:var(--dark);border-bottom:1px solid var(--border);position:relative;overflow:hidden}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse 70% 80% at 85% 15%,black 0%,transparent 70%);pointer-events:none}
 .eyebrow{font-family:'Space Mono',monospace;font-size:.66rem;color:var(--accent);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .eyebrow::before{content:'';display:block;width:26px;height:1px;background:var(--accent)}
 .page-hero h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;line-height:1.12;margin-bottom:14px;letter-spacing:-.6px}
 .page-hero h1 span{color:var(--accent)}
 .page-hero p{color:var(--gray);font-size:.96rem;max-width:500px;line-height:1.72}
-
-/* SERVICE CARDS */
 .services-section{padding:80px 0}
 .svc-full{border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:2px;background:var(--card)}
 .svc-full:last-child{margin-bottom:0}
@@ -63,28 +63,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--black);color:va
 .svc-icon-lg svg{width:100%;height:100%}
 .svc-body{padding:40px 48px;display:flex;flex-direction:column;justify-content:center}
 .svc-cat{font-family:'Space Mono',monospace;font-size:.65rem;color:var(--accent);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
-.svc-body h2{font-size:1.45rem;font-weight:800;margin-bottom:12px;letter-spacing:-.2px}
+.svc-body h2{font-size:1.45rem;font-weight:800;margin-bottom:16px;letter-spacing:-.2px}
 .svc-body p{color:var(--gray);font-size:.9rem;line-height:1.74;margin-bottom:20px;max-width:500px}
-.price-range{display:inline-flex;align-items:center;gap:8px;background:var(--accent-dim);border:1px solid var(--accent-border);padding:6px 14px;border-radius:3px;margin-bottom:20px}
-.price-range span{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--accent);font-weight:700;letter-spacing:.5px}
 .svc-features{list-style:none;display:flex;flex-direction:column;gap:7px}
 .svc-features li{color:rgba(245,245,245,.65);font-size:.84rem;display:flex;align-items:center;gap:10px}
 .svc-features li::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:var(--accent);flex-shrink:0}
-
-/* PRICING TABLE */
-.pricing-section{padding:0 0 96px}
-.pricing-table{border:1px solid var(--border);border-radius:10px;overflow:hidden}
-.pt-header{background:var(--dark2);padding:20px 28px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;border-bottom:1px solid var(--border)}
-.pt-header span{font-family:'Space Mono',monospace;font-size:.65rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--gray2)}
-.pt-row{padding:18px 28px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;border-bottom:1px solid var(--border);background:var(--card);transition:background .2s;align-items:center}
-.pt-row:last-child{border-bottom:none}
-.pt-row:hover{background:#1e1e1e}
-.pt-row span{font-size:.875rem}
-.pt-row span:first-child{font-weight:600}
-.pt-row span:nth-child(2){color:var(--gray);font-size:.82rem}
-.pt-row span:last-child{color:var(--accent);font-family:'Space Mono',monospace;font-size:.82rem;font-weight:700}
-
-/* CTA */
 .cta-section{padding:80px 0;background:var(--dark);border-top:1px solid var(--border)}
 .cta-inner{text-align:center;max-width:580px;margin:0 auto}
 .cta-inner h2{font-size:clamp(1.65rem,3.2vw,2.3rem);font-weight:800;margin-bottom:14px;letter-spacing:-.4px}
@@ -98,20 +81,29 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
 .foot-col ul li{margin-bottom:9px}
 .foot-col ul li a{color:var(--gray);text-decoration:none;font-size:.83rem;transition:color .2s}
 .foot-col ul li a:hover{color:var(--accent)}
-.foot-logo{font-family:'Space Mono',monospace;font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:14px;display:block}
+.foot-logo{display:flex;align-items:center;gap:9px;font-family:'Space Mono',monospace;font-size:1.15rem;font-weight:700;color:var(--white);margin-bottom:14px}
+.foot-logo img{height:28px;width:auto;display:block}
 .foot-logo em{color:var(--accent);font-style:normal}
 .foot-bottom{border-top:1px solid var(--border);padding:22px 0;text-align:center}
 .foot-bottom p{color:var(--gray2);font-size:.74rem}
-@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:1024px){.foot-grid{grid-template-columns:1fr 1fr}.svc-full-inner{grid-template-columns:1fr}.svc-visual{min-height:140px;flex-direction:row}.svc-full-inner.reverse{direction:ltr}.svc-full-inner.reverse .svc-visual{border-left:none;border-bottom:1px solid var(--border)}.svc-visual{border-right:none;border-bottom:1px solid var(--border)}.pt-header,.pt-row{grid-template-columns:1fr 1fr}.pt-header span:nth-child(2),.pt-row span:nth-child(2){display:none}}
-@media(max-width:768px){.nav-links{display:none;position:fixed;top:66px;left:0;right:0;background:rgba(7,7,7,.98);padding:24px 28px;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.mob-toggle{display:flex}.svc-body{padding:28px 24px}.foot-grid{grid-template-columns:1fr;gap:28px}}
+@media(max-width:1024px){.foot-grid{grid-template-columns:1fr 1fr}.svc-full-inner{grid-template-columns:1fr}.svc-visual{min-height:140px;flex-direction:row}.svc-full-inner.reverse{direction:ltr}.svc-full-inner.reverse .svc-visual{border-left:none;border-bottom:1px solid var(--border)}.svc-visual{border-right:none;border-bottom:1px solid var(--border)}}
+@media(max-width:768px){.nav-links{display:none;position:fixed;top:104px;left:0;right:0;background:rgba(7,7,7,.98);padding:24px 28px;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.mob-toggle{display:flex}.svc-body{padding:28px 24px}.foot-grid{grid-template-columns:1fr;gap:28px}.address-bar{gap:10px;font-size:.66rem}}
 </style>
 </head>
 <body>
+
+<div class="address-bar">
+  <span>📍 108 W Anderson St, Selma NC 27576</span>
+  <span>·</span>
+  <a href="tel:9192950791">(919) 295-0791</a>
+  <span>·</span>
+  <span>Walk-ins Welcome</span>
+</div>
+
 <nav class="navbar">
   <div class="container">
     <div class="nav-content">
-      <a href="index.html" class="logo">Tech<em>Revive</em></a>
+      <a href="index.html" class="logo"><img src="assets/techrevive-icon.png" alt="TechRevive">Tech<em>Revive</em></a>
       <div class="nav-links" id="navLinks">
         <a href="index.html" class="nav-link">Home</a>
         <a href="services.html" class="nav-link active">Services</a>
@@ -131,7 +123,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
     <ul class="breadcrumb"><li><a href="index.html">Home</a></li><li>Services</li></ul>
     <div class="eyebrow">What We Fix</div>
     <h1>Repair Services<br><span>Built to Last</span></h1>
-    <p>Quality repairs for all major brands and models. We come to you anywhere in Johnston County and surrounding areas.</p>
+    <p>Quality repairs for all major brands and models. Walk in to 108 W Anderson St in Selma — most repairs done while you wait.</p>
   </div>
 </section>
 
@@ -156,8 +148,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
         <div class="svc-body">
           <div class="svc-cat">Screen &amp; Display</div>
           <h2>Screen Repair</h2>
-          <div class="price-range"><span>Starting at $80</span></div>
-          <p>Cracked or shattered screens replaced with premium quality parts. Whether it's just the glass or the full LCD/OLED assembly, we source the right parts and get it done right — usually in under 45 minutes at your location.</p>
+          <p>Cracked or shattered screens replaced with premium quality parts. Whether it's just the glass or the full LCD/OLED assembly, we get it done right — usually in under 45 minutes.</p>
           <ul class="svc-features">
             <li>iPhone 6 through iPhone 15 Pro Max</li>
             <li>All Samsung Galaxy models</li>
@@ -180,17 +171,15 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
               <rect x="11" y="22" width="28" height="18" rx="2" fill="rgba(0,255,136,.1)"/>
               <line x1="30" y1="10" x2="30" y2="18" stroke="#00ff88" stroke-width="1.6" opacity=".35"/>
               <line x1="30" y1="44" x2="30" y2="52" stroke="#00ff88" stroke-width="1.6" opacity=".35"/>
-              <line x1="18" y1="55" x2="42" y2="55" stroke="rgba(0,255,136,.28)" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
         </div>
         <div class="svc-body">
           <div class="svc-cat">Power &amp; Battery</div>
           <h2>Battery Replacement</h2>
-          <div class="price-range"><span>Starting at $49</span></div>
-          <p>Restore your phone's battery life with genuine replacement cells. If your phone dies before end of day, shuts off randomly, or takes hours to charge, a fresh battery will feel like getting a new phone — at a fraction of the cost.</p>
+          <p>If your phone dies before end of day, shuts off randomly, or takes hours to charge, a fresh battery will feel like getting a new phone — at a fraction of the cost.</p>
           <ul class="svc-features">
-            <li>Free battery health check on-site</li>
+            <li>Free battery health check in-store</li>
             <li>OEM-grade replacement cells</li>
             <li>20–40 minute turnaround</li>
             <li>Covers iPhones, Samsung, and most Android devices</li>
@@ -219,14 +208,12 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
         <div class="svc-body">
           <div class="svc-cat">Liquid Damage</div>
           <h2>Water Damage Repair</h2>
-          <div class="price-range"><span>Free Diagnostic</span></div>
-          <p>Dropped it in water? Don't put it in rice — call us immediately. The faster we treat liquid damage, the better the odds of a full recovery. We open, dry, treat corrosion, and test every component on-site.</p>
+          <p>Dropped it in water? Don't put it in rice — come in immediately. The faster we treat liquid damage, the better the odds of a full recovery. We open, dry, treat corrosion, and test every component.</p>
           <ul class="svc-features">
-            <li>Immediate response service available</li>
             <li>Internal drying and corrosion treatment</li>
             <li>Component-by-component testing</li>
             <li>Works on pool, toilet, rain, and drink spills</li>
-            <li>Free assessment — you only pay if we fix it</li>
+            <li>Free diagnostic — call us for pricing</li>
           </ul>
         </div>
       </div>
@@ -242,18 +229,16 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
               <rect x="23" y="12" width="14" height="22" rx="2" stroke="rgba(0,255,136,.28)" stroke-width="1.5"/>
               <rect x="24" y="43" width="12" height="5" rx="2" fill="rgba(0,255,136,.18)" stroke="#00ff88" stroke-width="1.5"/>
               <polyline points="33,18 28,27 33,27 28,36" stroke="#00ff88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="14" y1="53" x2="46" y2="53" stroke="rgba(0,255,136,.2)" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
         </div>
         <div class="svc-body">
           <div class="svc-cat">Charging Issues</div>
           <h2>Charging Port Repair</h2>
-          <div class="price-range"><span>Starting at $55</span></div>
-          <p>If your phone won't charge or only charges at certain angles, the charging port is usually the culprit. Lint, debris, and wear all degrade ports over time. We clean or replace the port and get you powered up fast.</p>
+          <p>If your phone won't charge or only charges at certain angles, the port is usually the culprit. We clean or replace it and get you powered up fast.</p>
           <ul class="svc-features">
             <li>Lightning, USB-C, and Micro-USB ports</li>
-            <li>Deep cleaning before replacement (often solves it)</li>
+            <li>Deep cleaning before replacement</li>
             <li>Full charging test post-repair</li>
             <li>Covers all major brands</li>
             <li>90-day warranty</li>
@@ -280,10 +265,9 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
         <div class="svc-body">
           <div class="svc-cat">Camera &amp; Optics</div>
           <h2>Camera Repair</h2>
-          <div class="price-range"><span>Starting at $65</span></div>
-          <p>Blurry photos, cracked lens covers, autofocus failures, or a camera that won't open at all — we diagnose the root cause and replace only what needs replacing. Front and rear camera repairs available.</p>
+          <p>Blurry photos, cracked lens covers, autofocus failures, or a camera that won't open — we diagnose the root cause and replace only what needs replacing.</p>
           <ul class="svc-features">
-            <li>Lens cover replacement (most affordable)</li>
+            <li>Lens cover replacement</li>
             <li>Full camera module replacement</li>
             <li>Front-facing and rear camera</li>
             <li>Video and photo quality testing</li>
@@ -311,8 +295,7 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
         <div class="svc-body">
           <div class="svc-cat">Audio</div>
           <h2>Speaker &amp; Microphone Repair</h2>
-          <div class="price-range"><span>Starting at $50</span></div>
-          <p>Muffled audio, a speaker that cuts out, or calls where people can't hear you — audio issues are frustrating but usually a quick fix. We replace loudspeakers, earpiece speakers, and microphones on all major devices.</p>
+          <p>Muffled audio, a speaker that cuts out, or calls where people can't hear you — audio issues are frustrating but usually a quick fix.</p>
           <ul class="svc-features">
             <li>Loudspeaker replacement</li>
             <li>Earpiece speaker repair</li>
@@ -327,41 +310,14 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
   </div>
 </section>
 
-<!-- PRICING TABLE -->
-<section class="pricing-section">
-  <div class="container">
-    <div class="sec-label">Pricing Guide</div>
-    <h2 style="font-size:clamp(1.8rem,3.5vw,2.4rem);font-weight:800;letter-spacing:-.5px;margin-bottom:36px">Common Repair Prices</h2>
-    <div class="pricing-table">
-      <div class="pt-header">
-        <span>Device / Repair</span>
-        <span>Typical Timeframe</span>
-        <span>Price Range</span>
-      </div>
-      <div class="pt-row"><span>iPhone Screen (SE / 6 / 7 / 8)</span><span>30–45 min</span><span>$80–$110</span></div>
-      <div class="pt-row"><span>iPhone Screen (X / XR / 11)</span><span>30–45 min</span><span>$100–$140</span></div>
-      <div class="pt-row"><span>iPhone Screen (12 / 13 series)</span><span>30–45 min</span><span>$130–$180</span></div>
-      <div class="pt-row"><span>iPhone Screen (14 / 15 series)</span><span>45–60 min</span><span>$150–$220</span></div>
-      <div class="pt-row"><span>Samsung Galaxy Screen</span><span>30–60 min</span><span>$90–$200</span></div>
-      <div class="pt-row"><span>iPhone Battery</span><span>20–35 min</span><span>$49–$79</span></div>
-      <div class="pt-row"><span>Samsung Battery</span><span>20–40 min</span><span>$49–$75</span></div>
-      <div class="pt-row"><span>Charging Port (any brand)</span><span>25–45 min</span><span>$55–$90</span></div>
-      <div class="pt-row"><span>Camera Repair</span><span>30–60 min</span><span>$65–$150</span></div>
-      <div class="pt-row"><span>Speaker / Microphone</span><span>20–40 min</span><span>$50–$90</span></div>
-      <div class="pt-row"><span>Water Damage Assessment</span><span>Free</span><span>Free — pay only if fixed</span></div>
-    </div>
-    <p style="color:var(--gray);font-size:.8rem;margin-top:14px;font-family:'Space Mono',monospace">* Prices are estimates. Call (919) 295-0791 for an exact quote on your device.</p>
-  </div>
-</section>
-
 <section class="cta-section">
   <div class="container">
     <div class="cta-inner">
-      <h2>Need a Repair?</h2>
-      <p>Free diagnostics. We come to you. Most repairs done in under an hour.</p>
+      <h2>Stop in or give us a call</h2>
+      <p>108 W Anderson St, Selma NC 27576. Walk-ins welcome. Most repairs done while you wait.</p>
       <div class="cta-btns">
-        <a href="contact.html" class="btn btn-p btn-lg">Get Free Quote</a>
-        <a href="tel:9192950791" class="btn btn-s btn-lg">Call (919) 295-0791</a>
+        <a href="tel:9192950791" class="btn btn-p btn-lg">Call (919) 295-0791</a>
+        <a href="contact.html" class="btn btn-s btn-lg">Get a Free Quote</a>
       </div>
     </div>
   </div>
@@ -370,14 +326,18 @@ footer{background:var(--dark2);border-top:1px solid var(--border);padding:52px 0
 <footer>
   <div class="container">
     <div class="foot-grid">
-      <div class="foot-col"><span class="foot-logo">Tech<em>Revive</em></span><p>Professional cell phone repair in Smithfield, NC and surrounding areas. We come to you.</p></div>
+      <div class="foot-col">
+        <span class="foot-logo"><img src="assets/techrevive-icon.png" alt="TechRevive">Tech<em>Revive</em></span>
+        <p>Professional phone repair at 108 W Anderson St, Selma NC 27576. Walk-ins welcome.</p>
+      </div>
       <div class="foot-col"><h4>Navigation</h4><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div class="foot-col"><h4>Services</h4><ul><li><a href="#screen">Screen Repair</a></li><li><a href="#battery">Battery Replacement</a></li><li><a href="#water">Water Damage</a></li><li><a href="#charging">Charging Port</a></li><li><a href="#camera">Camera Repair</a></li></ul></div>
-      <div class="foot-col"><h4>Contact</h4><ul><li><a href="tel:9192950791">(919) 295-0791</a></li><li>Smithfield, NC</li><li>Serving 50+ Mile Radius</li></ul></div>
+      <div class="foot-col"><h4>Visit Us</h4><ul><li>108 W Anderson St</li><li>Selma, NC 27576</li><li><a href="tel:9192950791">(919) 295-0791</a></li><li>Walk-ins Welcome</li></ul></div>
     </div>
-    <div class="foot-bottom"><p>&copy; 2026 TechRevive Wireless Repairs. All rights reserved.</p></div>
+    <div class="foot-bottom"><p>&copy; 2026 TechRevive Wireless Repairs. All rights reserved. Serving Selma, Smithfield, Clayton, Goldsboro, Benson &amp; Johnston County, NC.</p></div>
   </div>
 </footer>
+
 <script>
 const toggle = document.getElementById('mobToggle');
 const nav = document.getElementById('navLinks');
